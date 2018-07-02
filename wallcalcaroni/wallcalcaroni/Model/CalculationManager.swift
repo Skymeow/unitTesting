@@ -8,7 +8,24 @@
 
 import Foundation
 
-struct CalculationManager {
+struct CalculationManager: Equatable {
+    static func ==(lhs: CalculationManager, rhs: CalculationManager) -> Bool {
+        
+        if lhs.valueA != rhs.valueA {
+            return false
+        }
+        if lhs.valueB != rhs.valueB {
+            return false
+        }
+        if lhs.currentOperand != rhs.currentOperand {
+            return false
+        }
+        if lhs.valueEntryArray != rhs.valueEntryArray {
+            return false
+        }
+        return true
+    }
+    
     var valueA: Int = 0
     var valueB: Int = 0
     var currentOperand: Operand?
