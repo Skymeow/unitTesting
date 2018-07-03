@@ -27,6 +27,40 @@ class CalculationManagerTests: XCTestCase {
         let manager1 = CalculationManager(valueA: 10, valueB: 10, currentOperand: .multiply, valueEntryArray: [])
         let manager2 = CalculationManager(valueA: 10, valueB: 10, currentOperand: .multiply, valueEntryArray: [])
         XCTAssertEqual(manager1, manager2)
-        
     }
+    
+    func testValuesChange_whenInsert() {
+        sut.insert(value: 10)
+        XCTAssertEqual(sut.valueA, 10)
+    }
+    
+    func testOperandInitialNil(){
+        XCTAssertNil(sut.currentOperand, "Operate should be nil first")
+    }
+    
+    func testSettingOperand() {
+//        sut.insert(value: 10)
+        sut.set(operand: .subtract)
+        XCTAssertNotNil(sut.currentOperand, "shouldn't be nil")
+    }
+    
+    func testCalculate() {
+        sut.insert(value: 10)
+        sut.set(operand: .multiply)
+        sut.insert(value: 5)
+        XCTAssertEqual(sut.calculate(), 50)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

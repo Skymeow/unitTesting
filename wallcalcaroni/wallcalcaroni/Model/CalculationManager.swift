@@ -85,4 +85,6 @@ struct CalculationManager: Equatable {
             return valueA / valueB
         }
     }
+    
+    
 }

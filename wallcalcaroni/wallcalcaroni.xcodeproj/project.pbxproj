@@ -16,6 +16,7 @@
 		719392901FFEE3CB00E5E849 /* Operand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193928F1FFEE3CB00E5E849 /* Operand.swift */; };
 		F9C9CB9620EAE7C6005AC961 /* wallcalcaroniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9CB9520EAE7C6005AC961 /* wallcalcaroniTests.swift */; };
 		F9C9CB9E20EAE803005AC961 /* CalculationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9CB9D20EAE803005AC961 /* CalculationManagerTests.swift */; };
+		F9C9CBA120EAF2B0005AC961 /* CalculateViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9CBA020EAF2B0005AC961 /* CalculateViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		F9C9CB9520EAE7C6005AC961 /* wallcalcaroniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wallcalcaroniTests.swift; sourceTree = "<group>"; };
 		F9C9CB9720EAE7C6005AC961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C9CB9D20EAE803005AC961 /* CalculationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationManagerTests.swift; sourceTree = "<group>"; };
+		F9C9CBA020EAF2B0005AC961 /* CalculateViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				F9C9CB9D20EAE803005AC961 /* CalculationManagerTests.swift */,
 				F9C9CB9520EAE7C6005AC961 /* wallcalcaroniTests.swift */,
 				F9C9CB9720EAE7C6005AC961 /* Info.plist */,
+				F9C9CBA020EAF2B0005AC961 /* CalculateViewControllerTests.swift */,
 			);
 			path = wallcalcaroniTests;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9C9CBA120EAF2B0005AC961 /* CalculateViewControllerTests.swift in Sources */,
 				F9C9CB9620EAE7C6005AC961 /* wallcalcaroniTests.swift in Sources */,
 				F9C9CB9E20EAE803005AC961 /* CalculationManagerTests.swift in Sources */,
 			);
