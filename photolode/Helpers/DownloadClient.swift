@@ -22,7 +22,13 @@ class DownloadClient {
         }.resume()
     }
     
-    
+    func terriblefunc() {
+        let total = 1000000
+        var current = 0
+        for i in 1...total {
+            current = i
+        }
+    }
 }
 
 extension URLSession: SessionProtocol {}

@@ -41,7 +41,12 @@ class downloadClientTests: XCTestCase {
         XCTAssertEqual(urlComponents?.path, "/images")
     }
     
-    
+    func testTerribleFuncPerformance() {
+//    test how many time this block of code takes to execute
+        measure {
+            sut.terriblefunc()
+        }
+    }
 }
 //    create a session to make sure url session works
 //* create a instance of other's framework  and make it confirm to potocol, so you can use it as you wish
