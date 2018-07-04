@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct CalculationManager: Equatable {
-    static func ==(lhs: CalculationManager, rhs: CalculationManager) -> Bool {
+struct CalculationViewModel: Equatable {
+    static func ==(lhs: CalculationViewModel, rhs: CalculationViewModel) -> Bool {
         
         if lhs.valueA != rhs.valueA {
             return false

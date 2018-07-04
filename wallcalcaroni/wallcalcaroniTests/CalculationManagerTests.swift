@@ -1,5 +1,5 @@
 //
-//  CalculationManagerTests.swift
+//  CalculationViewModelTests.swift
 //  wallcalcaroniTests
 //
 //  Created by Sky Xu on 7/2/18.
@@ -8,13 +8,13 @@
 
 import XCTest
 @testable import wallcalcaroni
-class CalculationManagerTests: XCTestCase {
+class CalculationViewModelTests: XCTestCase {
     
 //    system under test
-    var sut: CalculationManager!
+    var sut: CalculationViewModel!
     override func setUp() {
         super.setUp()
-        sut = CalculationManager()
+        sut = CalculationViewModel()
         
     }
     
@@ -24,8 +24,8 @@ class CalculationManagerTests: XCTestCase {
     }
     
     func testInit_whenGivenVals_takeVals() {
-        let manager1 = CalculationManager(valueA: 10, valueB: 10, currentOperand: .multiply, valueEntryArray: [])
-        let manager2 = CalculationManager(valueA: 10, valueB: 10, currentOperand: .multiply, valueEntryArray: [])
+        let manager1 = CalculationViewModel(valueA: 10, valueB: 10, currentOperand: .multiply, valueEntryArray: [])
+        let manager2 = CalculationViewModel(valueA: 10, valueB: 10, currentOperand: .multiply, valueEntryArray: [])
         XCTAssertEqual(manager1, manager2)
     }
     
